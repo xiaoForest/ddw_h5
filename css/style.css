@@ -1,0 +1,79 @@
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+}
+.mainWrapper {
+    position: relative;
+
+    background: #f7f7f0;
+}
+.ddwHomeBannerWrap {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: calc(100vh - 110px);
+}
+.ddwHomeBannerWrap ul {
+    position: relative;
+    height: 100%;
+}
+.ddwHomeBannerWrap ul li {
+ 
+}
+.ddwHomeBannerWrap ul li a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.ddwHomeBannerWrap ul li a img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.ddwHomeBannerWrap .swiper-pagination {
+    bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ddwHomeBannerWrap .swiper-pagination > span {
+    width: 14px;
+    height: 14px;
+    cursor: pointer;
+    background-color: #ececec;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+.ddwHomeBannerWrap .swiper-pagination > span.swiper-pagination-bullet-active {
+    background: none;
+}
+@media (max-width: 993px) {
+    .ddwHomeBannerWrap {
+        height: 42vh;
+    }
+    .footerCode {
+        width: 120px;
+        margin-right: 0;
+    }
+}
+@media (max-width: 767px) {
+    .ddwHomeBannerWrap {
+        height: 32vh;
+    }
+    .ddwHomeBannerWrap .swiper-pagination {
+        bottom: 15px;
+    }
+    .ddwHomeBannerWrap .swiper-pagination > span {
+        width: 10px;
+        height: 10px;
+    }
+}
