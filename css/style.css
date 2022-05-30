@@ -12,8 +12,7 @@
 }
 .mainWrapper {
     position: relative;
-
-    background: #f7f7f0;
+    background: rgb(255, 255, 255);
 }
 .ddwHomeBannerWrap {
     position: relative;
@@ -47,8 +46,8 @@
     width: 14px;
     height: 14px;
     cursor: pointer;
-    background-color: #ececec;
-    border: 1px solid #fff;
+    background-color: rgb(236, 236, 236);
+    border: 1px solid rgb(255, 255, 255);
     border-radius: 50%;
     opacity: 0.8;
 }
@@ -61,7 +60,7 @@
     }
     .footerCode {
         width: 120px;
-        margin-right: 0;
+        margin-right: 0px;
     }
 }
 @media (max-width: 767px) {
@@ -76,9 +75,8 @@
         height: 10px;
     }
 }
-
 .ddwHomeRecommendWrap {
-    padding: 45px 0 65px;
+    padding: 45px 0px 65px;
 }
 .ddwHomeRecommendBox {
     display: flex;
@@ -88,8 +86,7 @@
     display: block;
     position: relative;
     width: 32.3%;
-    transition: all 0.8s;
-    -webkit-transition: all 0.8s;
+    transition: all 0.8s ease 0s;
 }
 .ddwHomeRecommendBox .item .img {
     overflow: hidden;
@@ -98,25 +95,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
+    transition: all 0.4s ease 0s;
 }
 .ddwHomeRecommendBox .item .img img:hover {
     transform: scale(1.1, 1.1);
-    -webkit-transform: scale(1.1, 1.1);
 }
-
 .ddwHomeRecommendBox .item .letter {
     position: absolute;
     z-index: 1;
     bottom: 15%;
-    left: 0;
-    right: 0;
+    left: 0px;
+    right: 0px;
     width: 90%;
     margin: auto;
     font-size: 30px;
-    color: #fff;
-    font-family: "AccordAlternate-Light";
+    color: rgb(255, 255, 255);
+    font-family: AccordAlternate-Light;
 }
 @media (max-width: 1799px) {
 }
@@ -129,11 +123,105 @@
 @media (max-width: 993px) {
 }
 @media (max-width: 767px) {
-    .ddwHomeRecommendBox  {
+    .ddwHomeRecommendBox {
         flex-direction: column;
     }
     .ddwHomeRecommendBox .item {
         width: 100%;
         margin-bottom: 20px;
     }
+}
+.ddwHomeAboutWrap {
+    padding: 58px 0px;
+    background: rgb(245, 245, 245);
+}
+.ddwHomeAboutBox {
+    display: flex;
+}
+.ddwHomeAboutBox .infoMod {
+    width: 45%;
+    margin-top: 50px;
+    margin-right: 9%;
+}
+.ddwHomeAboutBox .infoMod .title {
+    font-size: 36px;
+    color: rgb(46, 46, 46);
+    font-family: AccordAlternate-Light;
+    margin-bottom: 20px;
+    font-weight: normal;
+    text-align: left;
+}
+.ddwHomeAboutBox .infoMod .bf {
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+    line-height: 180%;
+}
+.ddwHomeAboutBox .infoMod .btn {
+    display: block;
+    font-size: 13px;
+    color: rgb(36, 36, 36);
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    border: 1px solid rgb(189, 186, 183);
+    max-width: 167px;
+    width: 100%;
+    line-height: 39px;
+    margin-top: 30px;
+    transition: all 300ms ease 0s;
+}
+.ddwHomeAboutBox .infoMod .btn:hover {
+    background: #d80c18;
+    color: #f5f5f5;
+}
+.ddwHomeAboutBox .videoMod {
+    flex: 1;
+    width: 46%;
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+    .ddwHomeAboutBox .infoMod {
+        width: 45%;
+        margin-top: 20px;
+        margin-right: 2%;
+    }
+    .ddwHomeAboutBox .videoMod {
+        width: 50%;
+    }
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    .ddwHomeAboutWrap {
+        padding: 30px 0px;
+ 
+    }
+    .ddwHomeAboutBox {
+        flex-direction: column-reverse;
+    }
+    .ddwHomeAboutBox .infoMod {
+        width: 100%;
+
+        margin: 15px 0;
+    }
+    .ddwHomeAboutBox .videoMod {
+        width: 100%;
+    }
+    .ddwHomeAboutBox .infoMod .title {
+        font-size: 28px;
+        text-align: center;
+    }
+    .ddwHomeAboutBox .infoMod .btn {
+        width: 100%;
+        max-width: 100%;
+        margin-top: 15px;
+    }
+    .ddwHomeAboutBox .infoMod .bf {
+        font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
 }
