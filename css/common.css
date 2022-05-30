@@ -94,7 +94,7 @@ a {
     text-decoration: none;
     outline: 0;
 }
-.ddwFooterCatalogue a:hover,
+.hysFooterCatalogue a:hover,
 a:active,
 a:hover {
     text-decoration: none;
@@ -6747,47 +6747,47 @@ button.swiper-pagination-bullet {
     width: 100%;
     z-index: 500;
 }
-.ddwHeaderRight {
+.hysHeaderRight {
     display: flex;
     align-items: center;
 }
-.ddwHeaderNav {
+.hysHeaderNav {
     height: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.ddwLogo {
+.hysLogo {
     display: block;
     width: 170px;
 }
 
-.ddwNavlistBox {
+.hysNavlistBox {
     display: flex;
 }
-.ddwNavlist {
+.hysNavlist {
     height: 100%;
     display: flex;
     align-items: center;
 }
-.ddwNavlist li {
+.hysNavlist li {
     display: inline-block;
     vertical-align: middle;
     margin: 0 19px;
     padding-bottom: 0;
     position: relative;
 }
-.ddwNavlist li.on {
+.hysNavlist li.on {
     border-bottom: 4px solid var(--red--);
 }
-.ddwNavlist li a.chiefly {
+.hysNavlist li a.chiefly {
     display: block;
     padding: 16px 0;
     font-size: 16px;
     text-transform: capitalize;
     cursor: pointer;
 }
-.ddwSecondary {
+.hysSecondary {
     position: absolute;
     left: 0;
     padding: 40px 0;
@@ -6799,12 +6799,12 @@ button.swiper-pagination-bullet {
     opacity: 0;
     visibility: hidden;
 }
-.ddwNavlist li:hover a.chiefly ~ .ddwSecondary {
+.hysNavlist li:hover a.chiefly ~ .hysSecondary {
     display: block;
     opacity: 1;
     visibility: visible;
 }
-.ddwSecondary .text {
+.hysSecondary .text {
     display: flex;
     line-height: 40px;
     font-size: 16px;
@@ -6812,15 +6812,15 @@ button.swiper-pagination-bullet {
     transition: all 0.3s ease;
     align-items: center;
 }
-.ddwSecondary .text:hover {
+.hysSecondary .text:hover {
 }
-.ddwSecondary .text .icon-svg {
+.hysSecondary .text .icon-svg {
     width: 30px;
     height: 30px;
     margin-left: -10px;
 }
-.ddwSecondary:before,
-.ddwSecondary:after {
+.hysSecondary:before,
+.hysSecondary:after {
     width: 9999px;
     height: 100%;
     position: absolute;
@@ -6828,36 +6828,36 @@ button.swiper-pagination-bullet {
     content: "";
     top: 0;
 }
-.ddwSecondary:before {
+.hysSecondary:before {
     left: 100%;
 }
-.ddwSecondary:after {
+.hysSecondary:after {
     right: 100%;
 }
-.ddwHeaderInt {
+.hysHeaderInt {
     margin-left: 20px;
     height: 100%;
     display: flex;
     align-items: center;
 }
-.ddwHeaderInt .icon {
+.hysHeaderInt .icon {
     display: flex;
     cursor: pointer;
 }
-.ddwHeaderInt .icon-svg {
+.hysHeaderInt .icon-svg {
     width: 25px;
     height: 25px;
     display: flex;
     transition: all 0.3s ease;
 }
-.ddwHeaderInt .icon-svg:hover,
-.ddwSecondary .text:hover .icon-svg {
+.hysHeaderInt .icon-svg:hover,
+.hysSecondary .text:hover .icon-svg {
     fill: var(--red--);
 }
-.ddwSecondary .text:hover {
+.hysSecondary .text:hover {
     color: var(--red--);
 }
-.ddwHeaderInt .icon_search {
+.hysHeaderInt .icon_search {
     position: relative;
     top: 2px;
 }
@@ -6869,7 +6869,7 @@ button.swiper-pagination-bullet {
 @media (max-width: 1379px) {
 }
 @media (max-width: 1299px) {
-    .ddwNavlist li {
+    .hysNavlist li {
         margin: 0 15px;
     }
 }
@@ -6886,7 +6886,7 @@ button.swiper-pagination-bullet {
     }
 }
 
-.ddwSearchWrapper {
+.hysSearchWrapper {
     background: rgba(255, 255, 255, 0.9);
     position: fixed;
     top: 110px;
@@ -6894,18 +6894,18 @@ button.swiper-pagination-bullet {
     z-index: 11;
     display: none;
 }
-.ddwSearchBox {
+.hysSearchBox {
     border-bottom: 1px solid #e3e3e3;
     margin: 40px 0;
 }
-.ddwSearchBox .con {
+.hysSearchBox .con {
     width: 100%;
     padding: 20px 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ddwSearchBox .con input {
+.hysSearchBox .con input {
     background: none;
     width: 100%;
     height: 44px;
@@ -6913,7 +6913,7 @@ button.swiper-pagination-bullet {
     line-height: 1;
     text-align: center;
 }
-.ddwSearchBox .con .btn {
+.hysSearchBox .con .btn {
     width: 100px;
     height: 42px;
     line-height: 41px;
@@ -6942,7 +6942,7 @@ button.swiper-pagination-bullet {
     justify-content: space-between;
     z-index: 1000;
 }
-.ddwMLogo {
+.hysMLogo {
     width: 120px;
 }
 .mIconbox {
@@ -7022,7 +7022,7 @@ button.swiper-pagination-bullet {
     display: none;
 }
 @media (max-width: 1199px) {
-    .ddwSearchWrapper {
+    .hysSearchWrapper {
         top: 62px;
     }
     .mHeaderWrapper {
@@ -7074,13 +7074,13 @@ button.swiper-pagination-bullet {
     .navMobileWrap.show .navMobileBox {
         transform: translateX(0);
     }
-    .ddwSearchBox {
+    .hysSearchBox {
         margin: 20px 0;
     }
-    .ddwSearchBox .con {
+    .hysSearchBox .con {
         padding: 10px 0;
     }
-    .ddwSearchBox .con .btn {
+    .hysSearchBox .con .btn {
         width: 80px;
         height: 40px;
         line-height: 38px;
@@ -7466,14 +7466,14 @@ button.swiper-pagination-bullet {
     }
 }
 
-.ddwShare {
+.hysShare {
     padding: 0 0 50px;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.ddwShare a {
+.hysShare a {
     font-size: 30px;
     color: #bbb;
     margin: 0 20px;
@@ -7482,10 +7482,10 @@ button.swiper-pagination-bullet {
     align-items: center;
     justify-content: center;
 }
-.ddwShare a:before {
+.hysShare a:before {
     font-family: "iconfont";
 }
-.ddwShare a:hover {
+.hysShare a:hover {
     transform: scale(1.2, 1.2);
 }
 @media (max-width: 1799px) {
@@ -7498,11 +7498,11 @@ button.swiper-pagination-bullet {
 }
 @media (max-width: 993px) {
 }
-@media (max-width: 767px) {.ddwShare {
+@media (max-width: 767px) {.hysShare {
     padding: 30px 0px 50px;
 
 }
-.ddwShare a {
+.hysShare a {
     font-size: 24px;
 
     margin: 0 10px;

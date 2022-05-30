@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
             duration: 1000
         });
     }
-    var $menu = $('.ddwSearchWrapper');
+    var $menu = $('.hysSearchWrapper');
     var $mainMenuState = $('.onSearch');
 
     function changeHeader() {
@@ -117,25 +117,25 @@ jQuery(document).ready(function ($) {
     let headHover = true
 
     // if ($(window).width() > 767) {
-    //     $('.ddwMainMenu li').mouseover(function () {
+    //     $('.hysMainMenu li').mouseover(function () {
     //         headHover = true
     //         $(this).addClass('on').siblings().removeClass('on');
     //     }).mouseleave(function () {
     //         headHover = false
     //         setTimeout(() => {
     //             if (headHover == false) {
-    //                 $('.ddwMainMenu li').removeClass('on')
+    //                 $('.hysMainMenu li').removeClass('on')
     //                 hover = false
     //             }
     //         }, 300)
     //     })
     // } else {
-    //     $('.ddwMainMenu li').on('click', ' a', function (evt) {
-    //         let hasClassIcon = $('.ddwMainMenu li a span').attr('class')
+    //     $('.hysMainMenu li').on('click', ' a', function (evt) {
+    //         let hasClassIcon = $('.hysMainMenu li a span').attr('class')
     //         if (evt.target.className == hasClassIcon) {
     //             evt.preventDefault();
     //         }
-    //         let $saCon = $(this).next('.ddwASubmenus')
+    //         let $saCon = $(this).next('.hysASubmenus')
     //         if (!$saCon.hasClass('active')) {
     //             $saCon.hide().slideDown(250, function () {});
     //             $saCon.addClass('active')
@@ -147,12 +147,12 @@ jQuery(document).ready(function ($) {
     //     })
     // }
 
-    $('.ddwChangeMore').on('click', function () {
+    $('.hysChangeMore').on('click', function () {
         $(this).toggleClass('show')
     })
 
-    if ($('.ddwHomeBannerWrap').length) {
-        var ddwHomeBannerWrap = new Swiper('.ddwHomeBannerWrap', {
+    if ($('.hysHomeBannerWrap').length) {
+        var hysHomeBannerWrap = new Swiper('.hysHomeBannerWrap', {
             effect: 'fade', // cards
             loop: true,
             autoplay: {
@@ -170,8 +170,8 @@ jQuery(document).ready(function ($) {
             },
         })
     }
-    if ($('.ddwHomeProductSwiper').length) {
-        var ddwHomeProductSwiper = new Swiper('.ddwHomeProductSwiper', {
+    if ($('.hysHomeProductSwiper').length) {
+        var hysHomeProductSwiper = new Swiper('.hysHomeProductSwiper', {
             effect: 'cards', // cards
             loop: true,
             slidesPerView: 4,
@@ -181,8 +181,8 @@ jQuery(document).ready(function ($) {
                 disableOnInteraction: false
             },
             navigation: {
-                nextEl: '.ddwHomeProduct-button-prev',
-                prevEl: '.ddwHomeProduct-button-next',
+                nextEl: '.hysHomeProduct-button-prev',
+                prevEl: '.hysHomeProduct-button-next',
             },
             breakpoints: {
                 "767": {
@@ -197,8 +197,27 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    if ($('.ddwGoodsImgsSwiper').length || $('.ddwProductBannersSwiper').length) {
-        var ddwGoodsImgsSwiper = new Swiper(".ddwGoodsImgsSwiper", {
+
+    if ($('.hysGallerySwiper').length) {
+        var hysHomeProductSwiper = new Swiper('.hysGallerySwiper', {
+            effect: 'cards', // cards
+            loop: true,
+            slidesPerView: 1,
+            spaceBetween: 0,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.hysGallery-button-prev',
+                prevEl: '.hysGallery-button-next',
+            },
+ 
+        })
+    }
+
+    if ($('.hysGoodsImgsSwiper').length || $('.hysProductBannersSwiper').length) {
+        var hysGoodsImgsSwiper = new Swiper(".hysGoodsImgsSwiper", {
             spaceBetween: 10,
             slidesPerView: 6,
             slideToClickedSlide: true,
@@ -208,10 +227,10 @@ jQuery(document).ready(function ($) {
                 disableOnInteraction: false
             },
             thumbs: {
-                swiper: ddwProductBannersSwiper,
+                swiper: hysProductBannersSwiper,
             },
         });
-        var ddwProductBannersSwiper = new Swiper('.ddwProductBannersSwiper', {
+        var hysProductBannersSwiper = new Swiper('.hysProductBannersSwiper', {
             effect: 'fade', // cards
             loop: true,
             autoplay: {
@@ -219,36 +238,36 @@ jQuery(document).ready(function ($) {
                 disableOnInteraction: false
             },
             thumbs: {
-                swiper: ddwGoodsImgsSwiper,
+                swiper: hysGoodsImgsSwiper,
             },
         })
-        ddwProductBannersSwiper.el.onmouseover = function () {
+        hysProductBannersSwiper.el.onmouseover = function () {
             changeStop()
         }
-        ddwProductBannersSwiper.el.onmouseleave = function () {
+        hysProductBannersSwiper.el.onmouseleave = function () {
             changeStart()
         }
-        ddwGoodsImgsSwiper.el.onmouseover = function () {
+        hysGoodsImgsSwiper.el.onmouseover = function () {
             changeStop()
         }
-        ddwGoodsImgsSwiper.el.onmouseleave = function () {
+        hysGoodsImgsSwiper.el.onmouseleave = function () {
             changeStart()
         }
 
         function changeStop() {
-            ddwProductBannersSwiper.autoplay.stop();
-            ddwGoodsImgsSwiper.autoplay.stop();
+            hysProductBannersSwiper.autoplay.stop();
+            hysGoodsImgsSwiper.autoplay.stop();
         }
 
         function changeStart() {
-            ddwProductBannersSwiper.autoplay.start();
-            ddwGoodsImgsSwiper.autoplay.start();
+            hysProductBannersSwiper.autoplay.start();
+            hysGoodsImgsSwiper.autoplay.start();
         }
 
     }
 
-    if ($('.ddwAboutBanner').length) {
-        var ddwAboutBanner = new Swiper('.ddwAboutBanner', {
+    if ($('.hysAboutBanner').length) {
+        var hysAboutBanner = new Swiper('.hysAboutBanner', {
             effect: 'fade', // cards
             loop: true,
             autoplay: {
@@ -265,8 +284,8 @@ jQuery(document).ready(function ($) {
     }
 
 
-    if ($('#ddwHotProductsTwo').length) {
-        var ddwAboutBanner = new Swiper('#ddwHotProductsTwo', {
+    if ($('#hysHotProductsTwo').length) {
+        var hysAboutBanner = new Swiper('#hysHotProductsTwo', {
             effect: 'cards', // cards
             loop: true,
             slidesPerView: 4,
@@ -292,8 +311,8 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    if ($('#ddwHotProductsThree').length) {
-        var ddwAboutBanner = new Swiper('#ddwHotProductsThree', {
+    if ($('#hysHotProductsThree').length) {
+        var hysAboutBanner = new Swiper('#hysHotProductsThree', {
             effect: 'cards', // cards
             loop: true,
             slidesPerView: 4,
