@@ -26,7 +26,6 @@
     height: 100%;
 }
 .ddwHomeBannerWrap ul li {
- 
 }
 .ddwHomeBannerWrap ul li a {
     display: block;
@@ -75,5 +74,66 @@
     .ddwHomeBannerWrap .swiper-pagination > span {
         width: 10px;
         height: 10px;
+    }
+}
+
+.ddwHomeRecommendWrap {
+    padding: 45px 0 65px;
+}
+.ddwHomeRecommendBox {
+    display: flex;
+    justify-content: space-between;
+}
+.ddwHomeRecommendBox .item {
+    display: block;
+    position: relative;
+    width: 32.3%;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+.ddwHomeRecommendBox .item .img {
+    overflow: hidden;
+}
+.ddwHomeRecommendBox .item .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+}
+.ddwHomeRecommendBox .item .img img:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+
+.ddwHomeRecommendBox .item .letter {
+    position: absolute;
+    z-index: 1;
+    bottom: 15%;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+    font-size: 30px;
+    color: #fff;
+    font-family: "AccordAlternate-Light";
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+}
+@media (max-width: 767px) {
+    .ddwHomeRecommendBox  {
+        flex-direction: column;
+    }
+    .ddwHomeRecommendBox .item {
+        width: 100%;
+        margin-bottom: 20px;
     }
 }
