@@ -170,6 +170,32 @@ jQuery(document).ready(function ($) {
             },
         })
     }
+    if ($('.ddwHomeProductSwiper').length) {
+        var ddwHomeProductSwiper = new Swiper('.ddwHomeProductSwiper', {
+            effect: 'cards', // cards
+            loop: true,
+            slidesPerView: 4,
+            spaceBetween: 20,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false
+            },
+            navigation: {
+                nextEl: '.ddwHomeProduct-button-prev',
+                prevEl: '.ddwHomeProduct-button-next',
+            },
+            breakpoints: {
+                "767": {
+                    slidesPerView: 2,
+                    spaceBetween: 10,
+                },
+                "993": {
+                    slidesPerView: 3,
+                    spaceBetween: 15,
+                }
+            },
+        })
+    }
 
     if ($('.ddwGoodsImgsSwiper').length || $('.ddwProductBannersSwiper').length) {
         var ddwGoodsImgsSwiper = new Swiper(".ddwGoodsImgsSwiper", {
@@ -238,32 +264,6 @@ jQuery(document).ready(function ($) {
         })
     }
 
-    if ($('#ddwHotProductsOne').length) {
-        var ddwAboutBanner = new Swiper('#ddwHotProductsOne', {
-            effect: 'cards', // cards
-            loop: true,
-            slidesPerView: 4,
-            spaceBetween: 0,
-            autoplay: {
-                delay: 3000,
-                disableOnInteraction: false
-            },
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev ',
-            },
-            breakpoints: {
-                "767": {
-                    slidesPerView: 1,
-                    spaceBetween: 0,
-                },
-                "993": {
-                    slidesPerView: 2,
-                    spaceBetween: 0,
-                }
-            },
-        })
-    }
 
     if ($('#ddwHotProductsTwo').length) {
         var ddwAboutBanner = new Swiper('#ddwHotProductsTwo', {

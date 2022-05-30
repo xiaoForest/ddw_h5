@@ -197,7 +197,6 @@
 @media (max-width: 993px) {
     .ddwHomeAboutWrap {
         padding: 30px 0px;
- 
     }
     .ddwHomeAboutBox {
         flex-direction: column-reverse;
@@ -221,6 +220,106 @@
     }
     .ddwHomeAboutBox .infoMod .bf {
         font-size: 14px;
+    }
+}
+@media (max-width: 767px) {
+}
+
+.ddwHomeProductWrap {
+    padding: 80px 0 40px;
+}
+.ddwHHomeProductBox {
+    overflow: hidden;
+}
+.ddwHHomeProductBox .title {
+    margin-bottom: 60px;
+    font-size: 36px;
+    color: #1f1f1f;
+    font-family: "AccordAlternate-Light";
+    text-align: center;
+}
+
+.ddwHomeProductSwiper {
+}
+.ddwHomeProductSW {
+}
+.ddwHomeProductSW .items {
+    overflow: hidden;
+}
+.ddwHomeProductSW .items .img {
+    display: block;
+    overflow: hidden;
+}
+.ddwHomeProductSW .items .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+.ddwHomeProductSW .items .img img:hover {
+    transform: scale(1.1, 1.1);
+    -webkit-transform: scale(1.1, 1.1);
+}
+.ddwHomeProductSW .items .letter {
+    display: block;
+    font-size: 16px;
+    color: #2e2e2e;
+    margin-top: 30px;
+    text-align: center;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.ddwHomeProduct-guide {
+    margin-top: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.ddwHomeProduct-button-prev,
+.ddwHomeProduct-button-next {
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    margin: 0 5px;
+    border: 1px solid #bbb;
+    background: #fff no-repeat center;
+    display: flex;
+    cursor: pointer;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+.ddwHomeProduct-button-prev .icon-svg,
+.ddwHomeProduct-button-next .icon-svg {
+    width: 31px;
+    height: 31px;
+    fill: #bbb;
+    transition: all 0.8s;
+    -webkit-transition: all 0.8s;
+}
+.ddwHomeProduct-button-prev:hover,
+.ddwHomeProduct-button-next:hover {
+    border-color: rgb(88, 88, 88);
+}
+.ddwHomeProduct-button-prev:hover .icon-svg,
+.ddwHomeProduct-button-next:hover .icon-svg {
+    fill: rgb(88, 88, 88);
+}
+.ddwHomeProduct-button-prev .icon-svg {
+    transform: rotate(180deg);
+}
+@media (max-width: 1799px) {
+}
+@media (max-width: 1379px) {
+}
+@media (max-width: 1299px) {
+}
+@media (max-width: 1199px) {
+}
+@media (max-width: 993px) {
+    .ddwHomeProduct-guide {
+        margin-top: 25px;
     }
 }
 @media (max-width: 767px) {
