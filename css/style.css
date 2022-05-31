@@ -411,8 +411,8 @@
     overflow: hidden;
 }
 .hysMenuStyle .menu .title {
-    margin-bottom: 30px;
-    font-size: 30px;
+    margin-bottom: 15px;
+    font-size: 19px;
     color: #1f1f1f;
     line-height: 1.5;
 }
@@ -1225,11 +1225,78 @@
 }
 .hysProNext .boxes span {
     font-size: 16px;
-    line-height:1.5;
+    line-height: 1.5;
 }
 .hysProNext .boxes a {
     margin-left: 6px;
-    line-height:1.5;
+    line-height: 1.5;
     font-size: 16px;
     display: inline-block;
+}
+
+.hysArtTitle {
+    height: 35px;
+    margin: 30px 0;
+    font-size: 22px;
+    color: #333;
+    text-align: center;
+}
+.hysArtMenuStyle {
+    margin-bottom: 45px;
+}
+.hysArtMenuStyle .menu {
+    text-align: center;
+}
+.hysArtMenuStyle .menu .sublist {
+}
+.hysArtMenuStyle .menu .sublist li {
+    display: inline-block;
+    font-size: 15px;
+    color: #222;
+    margin: 0 25px;
+}
+.hysArtMenuStyle .menu .sublist li a {
+}
+.hysArtMenuStyle .menu .sublist li a.on {
+    color: #d80c18;
+}
+.hysArtContents {
+    margin: 30px 0;
+    color: #555;
+    line-height: 180%;
+    font-size: 16px;
+    min-height: 300px;
+    overflow: hidden;
+}
+
+.hysDownloadsList {
+    margin: 30px 0;
+    overflow: hidden;
+}
+.hysDownloadsList ul {
+}
+.hysDownloadsList ul li {
+    height: 48px;
+    line-height: 48px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.hysDownloadsList ul li .name {
+}
+.hysDownloadsList ul li a {
+    background: #333;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    cursor: pointer;
+}
+.hysDownloadsList ul li a .icon-svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
 }
