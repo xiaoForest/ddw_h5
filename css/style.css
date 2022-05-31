@@ -1100,6 +1100,23 @@
     margin: 30px 0;
     overflow: hidden;
 }
+.hysCaseDetail .title {
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 10px;
+    color: #222;
+}
+.hysCaseDetail .ext_mes {
+    text-align: center;
+    margin: 0 0 10px;
+}
+.hysCaseDetail .ext_mes div {
+    display: inline-block;
+    margin: 0 8px;
+    font-size: 14px;
+    color: #333;
+}
+
 .hysCaseDetail .name {
     font-size: 20px;
     text-align: center;
@@ -1197,4 +1214,22 @@
         padding-left: 0;
         margin: 10px 0 0;
     }
+}
+
+.hysProNext {
+    overflow: hidden;
+}
+.hysProNext .boxes {
+    margin-bottom: 20px;
+    display: flex;
+}
+.hysProNext .boxes span {
+    font-size: 16px;
+    line-height:1.5;
+}
+.hysProNext .boxes a {
+    margin-left: 6px;
+    line-height:1.5;
+    font-size: 16px;
+    display: inline-block;
 }
